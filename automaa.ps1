@@ -9,6 +9,7 @@ if ($s[1] -ne "device"){
 adb shell wm size 1080x1920
 Write-Output "分辨率调整成功"
 
+# path\to\your\MAA\config
 $path = "C:\Program Files\MAA\config\gui.json"
 $s = ((adb devices)[1] -split "\t")[0]
 Write-Output "adb设备名称："
@@ -25,6 +26,7 @@ if ($j.'Connect.Address' -eq $s){
 
 Write-Output "准备完毕，正在打开 MAA"
 Write-Output "正在等待 MAA 关闭"
+# path\to\your\MAA
 Start-Process "C:\Program Files\MAA\MAA.exe" -NoNewWindow -Wait 
 Write-Output "MAA 已关闭，正在回调分辨率"
 
