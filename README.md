@@ -12,13 +12,31 @@ MAA，包括其他一些自动化程序，通常在模拟器上运行。有时�
 
 ## 使用方法
 
-1. 设置 `adb` 的 `PATH` 环境变量，或手动修改脚本中的 adb 可执行文件路径。
-2. 修改目标 MAA 可执行文件路径，确保在不使用脚本的情况下，MAA 功能正常。
-3. 在要连接到的设备上打开调试。启动脚本。
-  1. 对于有限连接设备的情况，无需任何操作
-  2. 对于无线连接的情况，请输入实体设备 IP 地址与连接端口号
-4. 脚本调整宽高比，运行 MAA，运行完成后关闭 MAA（也可设置 MAA 完成任务后自动关闭）
-5. 脚本重置宽高比。
+> 可以使用 `(wget "https://raw.githubusercontent.com/HydrogenDeuterium/AutoMAA/main/automaa.ps1").content|iex` 来远程启动脚本。
+>
+> 也可以在`$PROFILE`中加入以下内容，以获取更好的体验：
+```powershell
+function automaa  {
+  iex ((wget "https://raw.githubusercontent.com/HydrogenDeuterium/AutoMAA/main/automaa.ps1").content)
+}
+```
+### 1. 启动前的准备操作
+
+  1.1 设置 `adb` 的 `PATH` 环境变量，或手动修改脚本中的 adb 可执行文件路径。
+  
+  1.2 修改目标 MAA 可执行文件路径，确保在不使用脚本的情况下，MAA 功能正常。
+  
+### 2. 在要连接到的设备上打开调试。启动脚本。
+
+  2.a 对于有限连接设备的情况，无需任何操作
+  
+  2.b 对于无线连接的情况，请输入实体设备 IP 地址与连接端口号
+  
+### 3. 脚本执行
+
+  3.1 脚本调整宽高比，运行 MAA，运行完成后关闭 MAA（也可设置 MAA 完成任务后自动关闭）
+  
+  3.2 脚本重置宽高比，脚本运行结束
 
 ## 故障排查
 
