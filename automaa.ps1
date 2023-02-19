@@ -5,6 +5,11 @@ if ($s[1] -ne "device"){
     # 192.168.3.62:40665 or etc
     adb connect $i
 }
+if ($s[1] -ne "device"){
+    Write-Output "连接失败"
+    Write-Output "请尝试排查问题后重启程序"
+    exit
+}
 
 adb shell wm size 1080x1920
 Write-Output "分辨率调整成功"
