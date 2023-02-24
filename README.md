@@ -1,6 +1,6 @@
 # AutoMAA
 
-实体机 MAA 自动部署脚本
+实体机 [MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights/) 自动部署脚本
 
 ## 介绍
 
