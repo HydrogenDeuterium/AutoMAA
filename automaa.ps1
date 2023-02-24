@@ -35,6 +35,9 @@ Write-Output "正在等待 MAA 关闭"
 Start-Process "C:\Program Files\MAA\MAA.exe" -NoNewWindow -Wait 
 Write-Output "MAA 已关闭，正在回调分辨率"
 
+Write-Output "重启 adb 服务..."
+adb start-server
+
 $s = ((adb devices)[1] -split "\t")[1]
 if ($s -ne "device"){
     Write-Output 连接已断开 尝试重新连接
