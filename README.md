@@ -20,6 +20,9 @@ function automaa  {
   iex ((wget "https://raw.githubusercontent.com/HydrogenDeuterium/AutoMAA/main/automaa.ps1").content)
 }
 ```
+> 或者将脚本（本体或者远程启动指令）放到 `PATH` 环境变量目录下
+
+
 ### 1. 启动前的准备操作
 
   1.1 设置 `adb` 的 `PATH` 环境变量，或手动修改脚本中的 adb 可执行文件路径。
