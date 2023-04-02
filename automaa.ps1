@@ -11,8 +11,8 @@ if ($s[1] -ne "device"){
     exit
 }
 
-$size=((adb shell wm size) -split ": ")[1]
-$density=((adb shell wm density) -split ": ")[1]
+$size=((adb shell wm size) -split ": ")[-1]
+$density=((adb shell wm density) -split ": ")[-1]
 adb shell wm size 1080x1920
 adb shell wm density 100
 Write-Output "分辨率调整成功"
