@@ -4,6 +4,7 @@ if ($s[1] -ne "device"){
     $i=(Read-Host "输入连接ip")
     # 192.168.3.62:40665 or etc
     adb connect $i
+    $s = ((adb devices)[1] -split "\t")
 }
 if ($s[1] -ne "device"){
 
