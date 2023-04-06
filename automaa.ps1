@@ -6,8 +6,11 @@ if ($s[1] -ne "device"){
     adb connect $i
 }
 if ($s[1] -ne "device"){
+
     Write-Output "连接失败"
+    Write-Output $s
     Write-Output "请尝试排查问题后重启程序"
+    Read-Host "按任意键退出"
     exit
 }
 
