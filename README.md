@@ -14,6 +14,8 @@ MAA，包括其他一些自动化程序，通常在模拟器上运行。有时�
 
 > 可以使用 `(wget "https://raw.githubusercontent.com/HydrogenDeuterium/AutoMAA/main/automaa.ps1").content|iex` 来远程启动脚本。
 >
+> 这需要设定 MAA 的安装目录为 `C:\Program Files\MAA\`。
+>
 > 也可以在`$PROFILE`中加入以下内容，以获取更好的体验：
 ```powershell
 function automaa  {
