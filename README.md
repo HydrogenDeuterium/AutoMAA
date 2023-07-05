@@ -2,6 +2,10 @@
 
 实体机 [MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights/) 自动部署脚本
 
+## 通知
+
+由于 MAA 的启动前脚本，启动后脚本的[功能](https://github.com/MaaAssistantArknights/MaaAssistantArknights/blob/dev/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.md#%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9B%B4%E6%94%B9%E5%88%86%E8%BE%A8%E7%8E%87)，基本覆盖了本项目的使用场景，因此决定停止维护。
+
 ## 介绍
 
 MAA，包括其他一些自动化程序，通常在模拟器上运行。有时候需要在实体机上运行时，对连接到的设备宽高比有要求。
